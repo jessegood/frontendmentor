@@ -24,12 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./interactive-rating-component.png)
+![Screenshot](./interactive-rating-component.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://interactive-rating-component-main-opal.vercel.app/)
+- Live Site URL: [Live site](https://interactive-rating-component-main-opal.vercel.app/)
 
 ## My process
 

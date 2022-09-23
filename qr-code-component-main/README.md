@@ -17,12 +17,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![]("./images/Screenshot 2022-09-04 at 20-53-38 Frontend Mentor QR code component.png")
+![Screenshot](./images/Screenshot%202022-09-04%20at%2020-53-38%20Frontend%20Mentor%20QR%20code%20component.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://qr-code-component-main-umber.vercel.app/)
+- Live Site URL: [Live site](https://qr-code-component-main-umber.vercel.app/)
 
 ## My process
 

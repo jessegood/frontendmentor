@@ -22,11 +22,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot 2022-09-07 at 21-43-14 Frontend Mentor Product preview card component.png)
+![Screenshot](./Screenshot 2022-09-07 at 21-43-14 Frontend Mentor Product preview card component.png)
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
 - Live Site URL: [Live site](https://product-preview-card-component-main-mauve.vercel.app/)
 
 ## My process
