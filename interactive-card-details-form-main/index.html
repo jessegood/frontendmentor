@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="creditcard">
+        <div class="cardfront">
+          <img
+            class="cardfront-image"
+            src="images/bg-card-front.png"
+            alt="credit card front"
+          />
+          <div class="fronttext">
+            <svg
+              width="84"
+              height="47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="30 -5 80 80"
+            >
+              <ellipse
+                cx="23.478"
+                cy="23.5"
+                rx="23.478"
+                ry="23.5"
+                fill="#fff"
+              />
+              <path
+                d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+                stroke="#fff"
+              />
+            </svg>
+            <p id="cardnumber">0000 0000 0000 0000</p>
+            <p>
+              <span id="frontcardname">Jane Appleseed</span
+              ><span class="end">00/00</span>
+            </p>
+          </div>
+        </div>
+        <div class="cardback">
+          <img
+            class="cardback-image"
+            src="images/bg-card-back.png"
+            alt="credit card back"
+          />
+          <p class="backtext">000</p>
+        </div>
+      </div>
+      <form action="#" novalidate>
+        <label for="name"> Cardholder Name </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="e.g. Jane Appleseed"
+          required
+        />
+        <label for="number"> Card Number </label>
+        <input
+          type="text"
+          name="number"
+          id="number"
+          placeholder="e.g. 1234 5678 9123 0000"
+          pattern="[\d\s]{19}"
+          minlength="19"
+          maxlength="19"
+          required
+        />
+
+        <div class="rowinput">
+          <div class="datecol">
+            <label class="month" for="month">Exp. Date (MM/YY)</label>
+            <input
+              type="text"
+              name="month"
+              id="month"
+              placeholder="MM"
+              pattern="0[1-9]|1[0-2]"
+              minlength="2"
+              maxlength="2"
+              required
+            />
+            <input
+              type="text"
+              name="year"
+              id="year"
+              placeholder="YY"
+              pattern="[23][2-9]"
+              minlength="2"
+              maxlength="2"
+              required
+            />
+          </div>
+          <div class="cvccol">
+            <label for="cvc">CVC</label>
+            <input
+              type="text"
+              name="cvc"
+              id="cvc"
+              placeholder="e.g. 123"
+              pattern="[\d]{3}"
+              minlength="3"
+              maxlength="3"
+              required
+            />
+          </div>
+        </div>
+        <button type="submit">Confirm</button>
+      </form>
+      <!-- Completed state start -->
+      <div class="thankyou">
+        <svg
+          width="80"
+          height="80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="40" cy="40" r="40" fill="url(#a)" />
+          <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+          <defs>
+            <linearGradient
+              id="a"
+              x1="-23.014"
+              y1="11.507"
+              x2="0"
+              y2="91.507"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#6348FE" />
+              <stop offset="1" stop-color="#610595" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <h3>Thank you!</h3>
+        <p>We've added your card details</p>
+        <button>Continue</button>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jesse Good</a>.
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

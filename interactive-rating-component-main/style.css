@@ -1,0 +1,138 @@
+body {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-circle: hsl(210, 19%, 23%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+}
+
+@media (max-width: 640px) {
+  main {
+    max-width: 275px;
+    padding: 1.5em 2em 1.5em 2em;
+  }
+}
+
+svg {
+  background-color: var(--dark-circle);
+  padding: 1em;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0.9em 0 0 0;
+}
+
+p,
+#numbers {
+  color: var(--medium-grey);
+}
+
+#numbers {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#numbers > span {
+  width: 28px;
+  height: 28px;
+  line-height: 32px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.selected {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.value {
+  background-color: var(--dark-circle);
+  cursor: pointer;
+}
+
+.value:hover {
+  background-color: hsl(0, 0%, 50%);
+  color: var(--white);
+}
+
+button {
+  background-color: var(--orange);
+  color: var(--white);
+  margin: 2em 0 2em 0;
+  padding: 1em 2em 1em 2em;
+  border-radius: 25px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+button:disabled {
+  background-color: hsl(0, 0%, 80%);
+  color: var(--white);
+}
+
+#thankyou {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#thankyou > .result {
+  height: 20px;
+  line-height: 24px;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  margin-top: 2em;
+  border-radius: 25px;
+  background-color: var(--dark-circle);
+  color: var(--orange);
+}
+
+#thankyou > h1 {
+  margin-top: 0.7em;
+}
+
+.message {
+  text-align: center;
+  padding: 0 0.1em 0 0.1em;
+}

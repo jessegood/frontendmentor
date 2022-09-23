@@ -1,0 +1,295 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+main {
+  display: flex;
+  min-width: 375px;
+}
+
+p {
+  color: var(--light-grayish-violet);
+}
+
+@media (min-width: 1000px) {
+  .creditcard {
+    background-image: url(images/bg-main-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 35%;
+  }
+
+  .cardfront {
+    position: absolute;
+    bottom: 47%;
+    right: -15%;
+  }
+
+  .cardfront-image {
+    width: 400px;
+  }
+
+  .cardback {
+    position: absolute;
+    bottom: 23%;
+    right: -25%;
+  }
+
+  .cardback-image {
+    width: 400px;
+  }
+
+  p.backtext {
+    position: absolute;
+    font-size: 0.7em;
+    top: 39%;
+    left: 79%;
+  }
+
+  .fronttext {
+    position: absolute;
+    font-size: 1.5em;
+    top: 11%;
+    left: 8%;
+    width: 85%;
+  }
+
+  .fronttext p:last-child {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    display: flex;
+    padding-bottom: 2em;
+  }
+
+  form {
+    justify-content: center;
+    margin: 0 auto 0 auto;
+  }
+
+  .thankyou {
+    justify-content: center;
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media (max-width: 999px) {
+  body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    min-width: 350px;
+  }
+
+  main {
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  .creditcard {
+    background-image: url(images/bg-main-mobile.png);
+    position: relative;
+  }
+
+  .cardback {
+    margin-top: 2em;
+    padding-left: 4.2em;
+    margin-bottom: 2.5em;
+  }
+
+  .cardback-image {
+    width: 90%;
+    min-width: 285px;
+  }
+
+  .cardfront {
+    position: absolute;
+    top: 6.9em;
+    left: 1em;
+  }
+
+  .cardfront-image {
+    width: 75%;
+    min-width: 285px;
+  }
+
+  p.backtext {
+    position: absolute;
+    top: 40%;
+    right: 17%;
+    font-size: 0.5em;
+  }
+
+  .fronttext {
+    position: absolute;
+    font-size: 1em;
+    top: 10%;
+    left: 6%;
+    width: 240px;
+  }
+
+  .fronttext p:last-child {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    display: flex;
+  }
+
+  form {
+    justify-content: flex-start;
+  }
+
+  .thankyou {
+    padding: 5em 1.5em 1.5em;
+  }
+}
+
+form {
+  padding: 5em 1.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-transform: uppercase;
+  margin-top: 1em;
+  font-size: 0.6em;
+  color: var(--very-dark-violet);
+}
+
+form input:focus,
+form input:hover {
+  border: 1px solid var(--dark-grayish-violet);
+  outline: none;
+}
+
+form input {
+  font-size: 0.9em;
+  padding: 0.7em;
+  border: 1px solid var(--light-grayish-violet);
+  border-radius: 5px;
+  margin-top: 0.5em;
+  cursor: pointer;
+  margin-bottom: 1.1em;
+}
+
+input.error {
+  border: 1px solid hsl(347, 69%, 56%);
+  margin-bottom: 0.3em;
+}
+
+.datecol {
+  margin-bottom: 1em;
+}
+
+.datecol > input {
+  margin-bottom: 0;
+}
+
+.datecol.error {
+  margin-bottom: 0;
+}
+
+.datecol.error > input {
+  margin-bottom: 0.3em;
+}
+
+.error-message {
+  color: hsl(347, 69%, 56%);
+  font-size: 0.5em;
+  width: 100%;
+  letter-spacing: normal;
+}
+
+::placeholder {
+  color: var(--light-grayish-violet);
+}
+
+.rowinput {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.rowinput label {
+  display: block;
+}
+
+.datecol > input {
+  width: 4.2em;
+}
+
+.cvccol {
+  flex: 1;
+  margin-left: 0.6em;
+}
+
+.cvccol > input {
+  width: 100%;
+}
+
+button {
+  padding: 1em;
+  color: var(--white);
+  background-color: var(--very-dark-violet);
+  border-radius: 5px;
+  border: none;
+  margin-top: 1em;
+}
+
+.fronttext #cardnumber {
+  width: 100%;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.end {
+  margin-left: auto;
+}
+
+.thankyou {
+  display: none;
+  flex-direction: column;
+}
+
+.thankyou > * {
+  margin: 0 auto 1em auto;
+}
+
+.thankyou > h3 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.thankyou > p {
+  font-size: 0.9em;
+  margin-bottom: 3em;
+}
+
+.thankyou > button {
+  width: 100%;
+}
