@@ -170,3 +170,12 @@ const cvcInput = document.getElementById("cvc");
 cvcInput.addEventListener("input", function (event) {
   cvc.innerHTML = this.value.length > 0 ? this.value : "000";
 });
+
+const continueBtn = document.getElementById("continue");
+continueBtn.addEventListener(
+  "click",
+  (event) => {
+    location.reload();
+  },
+  false
+);
