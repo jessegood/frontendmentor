@@ -15,4 +15,5 @@ export default defineConfig({
   build: {
     target: "esnext",
   },
+  assetsInclude: ["./images/avatars/*.png"],
 });
