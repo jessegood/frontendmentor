@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/jessegood/frontendmentor/tree/master/interactive-comments-section-main)
-- Live Site URL: [Add live site URL here](https://frontendmentor-w5qu.vercel.app/)
+- Solution URL: [Solution](https://github.com/jessegood/frontendmentor/tree/master/interactive-comments-section-main)
+- Live Site URL: [Live site](https://frontendmentor-w5qu.vercel.app/)
 
 ## My process
 
