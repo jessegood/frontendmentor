@@ -1,0 +1,15 @@
+@import "./index.css";
+
+.reply-btn {
+  background-color: var(--white);
+  border: none;
+  color: var(--moderate-blue);
+  margin-left: auto;
+  font-weight: var(--bold-font);
+  cursor: pointer;
+}
+
+.reply-btn > svg {
+  margin-right: 0.25em;
+  vertical-align: middle;
+}

@@ -1,0 +1,25 @@
+@import "./index.css";
+
+.btn-group {
+  margin-left: auto;
+}
+
+.btn-group > button {
+  background-color: var(--white);
+  border: none;
+  font-weight: var(--bold-font);
+  cursor: pointer;
+}
+
+.delete-btn {
+  color: var(--soft-red);
+}
+
+.edit-btn {
+  color: var(--moderate-blue);
+}
+
+.btn-group > button > svg {
+  margin-right: 0.5em;
+  vertical-align: middle;
+}

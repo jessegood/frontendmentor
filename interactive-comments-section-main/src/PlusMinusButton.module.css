@@ -1,0 +1,47 @@
+@import "./index.css";
+
+.plus-minus-btn {
+  background-color: var(--very-light-gray);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.plus-minus-btn > button {
+  color: var(--light-grayish-blue);
+  border: none;
+  background-color: transparent;
+  padding: 0.5em 0.8em;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.plus-minus-btn > button:hover {
+  background-color: var(--hover-blue);
+}
+
+.plus-minus-btn > button:disabled {
+  background-color: transparent;
+  cursor: default;
+}
+
+.plus-minus-btn > button.voted {
+  background-color: var(--moderate-blue);
+}
+
+.plus-minus-btn > span {
+  color: var(--moderate-blue);
+  font-weight: var(--normal-font);
+  padding: 0.5em 0.3em;
+}
+
+@media only screen and (min-width: 768px) {
+  .plus-minus-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plus-minus-btn > span {
+    text-align: center;
+    padding: 0.3em 0.3em;
+  }
+}

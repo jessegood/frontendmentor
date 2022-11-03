@@ -1,0 +1,92 @@
+@import "./index.css";
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "avatar avatar"
+    "content content"
+    "score reply";
+}
+
+.avatar {
+  grid-area: avatar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.score {
+  grid-area: score;
+}
+
+.reply {
+  grid-area: reply;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-areas:
+      "score avatar reply"
+      "score content content";
+  }
+
+  .score {
+    padding: 0.5em 1em 0 0.5em;
+  }
+}
+
+.replying-to {
+  color: var(--moderate-blue);
+  font-weight: var(--normal-font);
+  margin-right: 0.2em;
+}
+
+.comment {
+  color: var(--grayish-blue);
+  margin: 0.5em 0 1em 0;
+}
+
+.edit-text {
+  border-radius: 7px;
+  resize: none;
+  width: 100%;
+  margin: 0.5em 1em 1em 0;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-color: var(--light-gray);
+}
+
+.edit-text:focus {
+  outline: none;
+}
+
+.edit-group {
+  margin-left: auto;
+}
+
+.edit-group > button {
+  border-radius: 7px;
+  border: none;
+  padding: 0.8em 1.8em;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.edit-group > button:hover {
+  opacity: 0.5;
+}
+
+.cancel-btn {
+  background-color: var(--grayish-blue);
+}
+
+.update-btn {
+  background-color: var(--moderate-blue);
+}

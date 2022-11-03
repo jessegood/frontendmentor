@@ -1,0 +1,13 @@
+@import "./index.css";
+
+.replies {
+  border-left: 2px solid var(--light-gray);
+  margin-left: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .replies {
+    margin-left: 3em;
+    padding-left: 1.5em;
+  }
+}

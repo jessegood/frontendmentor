@@ -1,0 +1,53 @@
+@import "./index.css";
+
+.reply {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image {
+  order: 2;
+}
+
+.reply-text {
+  border-radius: 7px;
+  resize: none;
+  width: 100%;
+  margin-bottom: 1em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  order: 1;
+  border-color: var(--light-gray);
+}
+
+.reply-text:focus {
+  outline: none;
+}
+
+.btn-group {
+  order: 3;
+}
+
+.btn-group > button {
+  border-radius: 7px;
+  border: none;
+  padding: 0.8em 1.3em;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.reply-btn {
+  background-color: var(--moderate-blue);
+  margin-right: 1em;
+}
+
+.cancel-btn {
+  background-color: var(--soft-red);
+}
+
+.reply-btn:hover,
+.cancel-btn:hover {
+  opacity: 0.5;
+}

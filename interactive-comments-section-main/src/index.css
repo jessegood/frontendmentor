@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  --moderate-blue: hsl(238, 40%, 52%);
+  --hover-blue: hsl(238, 40%, 70%);
+  --soft-red: hsl(358, 79%, 66%);
+  --light-grayish-blue: hsl(239, 57%, 85%);
+  --pale-red: hsl(357, 100%, 86%);
+
+  --dark-blue: hsl(212, 24%, 26%);
+  --grayish-blue: hsl(211, 10%, 45%);
+  --light-gray: hsl(223, 19%, 93%);
+  --very-light-gray: hsl(228, 33%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  --light-font: 400;
+  --normal-font: 500;
+  --bold-font: 700;
+
+  background-color: var(--very-light-gray);
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #root {
+    width: 780px;
+    margin-top: 2em;
+  }
+}
+
+.card {
+  background-color: var(--white);
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  max-width: 780px;
+}

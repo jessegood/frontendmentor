@@ -1,0 +1,15 @@
+@import "./index.css";
+
+.reset-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 7px;
+  border: none;
+  padding: 0.4em 0.8em;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: var(--hover-blue);
+  outline: 0;
+}

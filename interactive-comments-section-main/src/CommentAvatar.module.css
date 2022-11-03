@@ -1,0 +1,27 @@
+@import "./index.css";
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar > *:not(:first-child) {
+  margin-left: 0.8em;
+}
+
+.username {
+  font-weight: var(--normal-font);
+}
+
+.created-at {
+  color: var(--grayish-blue);
+}
+
+.you-mark {
+  color: var(--white);
+  background-color: var(--moderate-blue);
+  padding: 0.1em 0.5em 0.2em 0.5em;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  vertical-align: top;
+}

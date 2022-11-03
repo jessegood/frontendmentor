@@ -1,0 +1,38 @@
+@import "./index.css";
+
+.add-Comment {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comment-text {
+  border-radius: 7px;
+  resize: none;
+  margin-bottom: 1em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-color: var(--light-gray);
+  width: 100%;
+}
+
+.comment-text:focus {
+  outline: none;
+}
+
+button.send-btn {
+  border-radius: 7px;
+  border: none;
+  padding: 0.8em 1.3em;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.send-btn {
+  background-color: var(--moderate-blue);
+  margin-left: auto;
+}
+
+.send-btn:hover {
+  opacity: 0.5;
+}
