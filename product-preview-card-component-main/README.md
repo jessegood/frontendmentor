@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./Screenshot 2022-09-07 at 21-43-14 Frontend Mentor Product preview card component.png)
+![Screenshot](Screenshot%202022-09-07%20at%2021-43-14%20Frontend%20Mentor%20Product%20preview%20card%20component.png)
 
 ### Links
 
